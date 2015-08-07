@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ArchiReportCLI
+Bundle-SymbolicName: com.redhat.ea.archimate.archireport;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Vendor: Red Hat
+Require-Bundle: com.archimatetool.reports,
+ com.archimatetool.model,
+ org.antlr.runtime,
+ com.archimatetool.editor,
+ org.eclipse.core.runtime
+Export-Package: com.redhat.ea.archimate.archireportcli;uses:="org.eclipse.equinox.app,org.osgi.framework"
+Eclipse-ExtensibleAPI: true
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: com.redhat.ea.archimate.archireportcli.Activator

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="app"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            cardinality="singleton-global"
+            thread="main"
+            visible="true">
+         <run
+               class="com.redhat.ea.archimate.archireportcli.ArchiReportCLI">
+         </run>
+      </application>
+   </extension>
+   <extension
+         id="app"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="com.redhat.ea.archimate.archireport.app"
+            name="ArchiReportCLI">
+         <property
+               name="appName"
+               value="ArchiReportCLI">
+         </property>
+      </product>
+   </extension>
+</plugin>
